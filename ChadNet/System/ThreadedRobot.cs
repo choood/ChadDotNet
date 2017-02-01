@@ -49,19 +49,7 @@ namespace ChadDotNet.System
             }
         }
 
-        public override void InitNetworkTables()
-        {
-            if (isStarted == false)
-            {
-                isStarted = true;
-                NetworkTable.SetNetworkIdentity("Robot");
-                NetworkTable.SetPersistentFilename("/home/lvuser/networktables.ini");
-                NetworkTable.SetServerMode();
-                NetworkTable.GetTable("");
-                NetworkTable.GetTable("Droo");
-                NetworkTable droo = NetworkTable.GetTable("Droo");
-            }
-        }
+        
 
         internal override void ProgramLoop()
         {
@@ -114,7 +102,7 @@ namespace ChadDotNet.System
                         Snooze(10);
                     }
 
-                    SmartConsole.PrintInfo("Stopping autonomous thhread");
+                    SmartConsole.PrintInfo("Stopping autonomous thread");
                     AutonomousThread.Stop();
                     driverStation.InAutonomous(false);
                 }

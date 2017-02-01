@@ -9,7 +9,7 @@ using static HAL.Base.HAL;
 
 namespace ChadDotNet.System
 {
-    class ClassLoader
+    public class ClassLoader
     {
         private static DriverStation driverstation;
         private static AbstractRobot robot;
@@ -22,7 +22,7 @@ namespace ChadDotNet.System
 
             for (
                 int length = 0; 
-                length <= SystemVariables.UserConfig.Splash.Length; 
+                length < SystemVariables.UserConfig.Splash.Length; 
                 length++
                 )
             {

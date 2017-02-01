@@ -31,16 +31,22 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FRC.CameraServer">
-      <HintPath>..\packages\FRC.CameraServer.dll</HintPath>
+      <HintPath>..\Lib\FRC.CameraServer.dll</HintPath>
     </Reference>
     <Reference Include="FRC.NetworkTables.Core">
-      <HintPath>..\packages\FRC.NetworkTables.Core.dll</HintPath>
+      <HintPath>..\Lib\FRC.NetworkTables.Core.dll</HintPath>
     </Reference>
     <Reference Include="FRC.OpenCvSharp">
-      <HintPath>..\packages\FRC.OpenCvSharp.dll</HintPath>
+      <HintPath>..\Lib\FRC.OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="FRC.WPILib.CTRE">
+      <HintPath>..\Lib\FRC.WPILib.CTRE.dll</HintPath>
     </Reference>
     <Reference Include="HAL">
-      <HintPath>..\packages\HAL.dll</HintPath>
+      <HintPath>..\Lib\HAL.dll</HintPath>
+    </Reference>
+    <Reference Include="NativeLibraryUtilities">
+      <HintPath>..\Lib\NativeLibraryUtilities.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -51,10 +57,10 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="WPILib">
-      <HintPath>..\packages\WPILib.dll</HintPath>
+      <HintPath>..\Lib\WPILib.dll</HintPath>
     </Reference>
     <Reference Include="WPILib.Extras">
-      <HintPath>..\packages\WPILib.Extras.dll</HintPath>
+      <HintPath>..\Lib\WPILib.Extras.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
